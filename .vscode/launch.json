@@ -7,8 +7,16 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}/myExpressApp\\routes\\index.js"
+            "name": "Launch app.js",
+            "program": "${workspaceFolder}/myExpressApp\\app.js",
+            "stopOnEntry": true
         }
-    ]
+    ],
+    "mongoRunner": {
+        "connections": [
+            {
+                "url": "mongodb://localhost:27017/SiteDatabase"
+            }
+        ]
+    }
 }
